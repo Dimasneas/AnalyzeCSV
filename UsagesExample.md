@@ -2,7 +2,7 @@
 
 Здесь можно просмотреть результаты выполнения программы
 
-##Вся таблица
+## Вся таблица
 
 ```console
 python main.py products.csv
@@ -24,7 +24,7 @@ python main.py products.csv
 
 [Скриншот](result_screenshot/all_table.png)
 
-##Фильтрация: *где рейтинг больше 4.4*
+## Фильтрация: *где рейтинг больше 4.4*
 ```console
 python main.py products.csv --where "rating>4.4"
 +------------------+---------+---------+----------+
@@ -41,7 +41,7 @@ python main.py products.csv --where "rating>4.4"
 
 [Скриншот](result_screenshot/rating_more_4_4.png)
 
-##Фильтрация: *где брэнд это apple*
+## Фильтрация: *где брэнд это apple*
 ```console
 python main.py products.csv --where "brand=apple"
 +----------------+---------+---------+----------+
@@ -56,7 +56,7 @@ python main.py products.csv --where "brand=apple"
 
 [Скриншот](result_screenshot/brand_is_apple.png)
 
-##Фильтрация: *где цена ниже 200*
+## Фильтрация: *где цена ниже 200*
 ```console
 python main.py products.csv --where "price<200"
 +---------------+---------+---------+----------+
@@ -69,7 +69,7 @@ python main.py products.csv --where "price<200"
 
 [Скриншот](result_screenshot/price_less_200.png)
 
-##Агрегация: *минимальная цена*
+## Агрегация: *минимальная цена*
 ```console
 python main.py products.csv --aggregate "price=min"
 +-------+
@@ -81,7 +81,7 @@ python main.py products.csv --aggregate "price=min"
 
 [Скриншот](result_screenshot/price_min.png)
 
-##Агрегация: *средний рейтинг*
+## Агрегация: *средний рейтинг*
 ```console
 python main.py products.csv --aggregate "rating=avg"
 +-------+
@@ -93,7 +93,7 @@ python main.py products.csv --aggregate "rating=avg"
 
 [Скриншот](result_screenshot/rating_avg.png)
 
-##Агрегация: *максимальный рейтинг*
+## Агрегация: *максимальный рейтинг*
 ```console
 python main.py products.csv --aggregate "rating=max"
 +-------+
@@ -105,7 +105,7 @@ python main.py products.csv --aggregate "rating=max"
 
 [Скриншот](result_screenshot/rating_max.png)
 
-##Комбинированный пример: *максимальная цена бренда apple*
+## Комбинированный пример: *максимальная цена бренда apple*
 ```console
 python main.py products.csv --where "brand=apple" --aggregate "rating=max"
 +-------+
@@ -117,7 +117,7 @@ python main.py products.csv --where "brand=apple" --aggregate "rating=max"
 
 [Скриншот](result_screenshot/apple_max_rating.png)
 
-##Комбинированный пример: *средний рейтинг для цен больше 300*
+## Комбинированный пример: *средний рейтинг для цен больше 300*
 
 ```console
 python main.py products.csv --where "price>300" --aggregate "rating=avg"
